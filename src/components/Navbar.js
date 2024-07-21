@@ -13,7 +13,7 @@ function Navbar(props){
                         
                         <li className="nav-item">
                         <a className="nav-link">About</a>
-                        </li>
+                        </li> 
                     </ul>
                 </div>
                 <p style={{paddingTop:"5px"}}><button onClick={() => props.toggleChangeColor('blue')} className="btn text-primary">Blue</button></p>&nbsp;
