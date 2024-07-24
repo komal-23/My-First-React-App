@@ -46,13 +46,13 @@ function TextForm(props){
             </div>
         </div>
         <div className="container">
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={{buttonStyle}} onClick={handleUpperCase}>Convert Upper</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleLowerCase}>Convert Lower</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleBoldText}>Bold Text</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleItalicText}>Italic Text</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleCopyText}>Copy Text</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleReverseText}>Reverse Text</button>
-            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} onClick={handleClearText}>Clear Text</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleUpperCase}>Convert Upper</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleLowerCase}>Convert Lower</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleBoldText}>Bold Text</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleItalicText}>Italic Text</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleCopyText}>Copy Text</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleReverseText}>Reverse Text</button>
+            <button type="button" className={`btn my-3 mx-1 ${props.btnColor}`} style={props.btnStyle ? props.btnStyle : {}} onClick={handleClearText}>Clear Text</button>
         </div>
         <div className={`container text-${props.mode === 'light' ? 'dark' : 'light'}`} >
             <h5>Preview</h5>
